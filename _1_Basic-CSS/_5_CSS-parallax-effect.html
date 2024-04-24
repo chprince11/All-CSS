@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-Parallax-Effect</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: "jost";
+        }
+
+        section {
+            width: 100%;
+            height: 100vh;
+            display: grid;
+            place-items: center;
+            text-align: center;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('./img/full-stack.png');
+            background-repeat: no-repeat;
+            background-size: 100% auto;
+
+            background-attachment: fixed;
+
+        }
+
+        .section-2 {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('https://buffer.com/library/content/images/size/w1200/2023/10/free-images.jpg');
+            background-repeat: no-repeat;
+            background-size: 100% auto;
+            background-attachment: fixed;
+        }
+
+        .section-3 {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('https://letsenhance.io/static/8f5e523ee6b2479e26ecc91b9c25261e/1015f/MainAfter.jpg');
+            background-repeat: no-repeat;
+            background-size: 100% auto;
+            background-attachment: fixed;
+        }
+
+        .section-4 {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('https://t4.ftcdn.net/jpg/02/56/10/07/360_F_256100731_qNLp6MQ3FjYtA3Freu9epjhsAj2cwU9c.jpg');
+            background-repeat: no-repeat;
+            background-size: 100% auto;
+            background-attachment: fixed;
+        }
+
+        h2 {
+            font-size: 64px;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: white;
+            text-shadow: 2px 2px 5px #000;
+        }
+
+        p {
+            font-size: 20px;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+
+    <section>
+        <div>
+            <h2>Parallax</h2>
+            <p>How to use parallax</p>
+        </div>
+    </section>
+
+    <section class="section-2">
+        <div>
+            <h2>About</h2>
+            <p>About me, prince</p>
+        </div>
+    </section>
+
+    <section class="section-3">
+        <div>
+            <h2>Projects</h2>
+            <p>My personal projects in this website</p>
+        </div>
+    </section>
+    <section class="section-4">
+        <div>
+            <h2>Nature</h2>
+            <p>The nature</p>
+        </div>
+    </section>
+
+</body>
+
+</html>
