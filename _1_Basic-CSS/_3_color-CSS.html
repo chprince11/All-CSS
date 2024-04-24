@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-Color</title>
+    <style>
+        /* CSS Colors
+        RGB ( Red Green Blue )
+        Red -   #ff 00 00 ( Hex ) & 255, 0, 0
+        Green - #00 ff 00         & 0, 255, 0
+        Blue -  #00 00 ff         & 0, 0, 255
+
+        red + green = Yellow - 255,255,0 & #ffff00
+        red + Blue = Magenta - 255,0,255 & #ff00ff
+        blue + green = Cyan -  0,255,255 & #00ffff
+        red + green + blue = White - 255,255,255 & #ffffff 
+
+        ** RGBA ( a is known as alpha channel for opacity control, value from 0 - 1 )
+
+        ** HSL ( Hue, Saturation, Lightness )
+        */
+        h1 {
+            color: red;
+            color: rgb(255, 0, 0);
+            color: #ff0000;
+            color: rgba(255, 0, 0, 1);
+        }
+
+        /* For completely transparent: 
+        
+        color: transparent;
+        or 
+        color: rgba(255, 0, 0, 0); // By just putting the alpha channel equal to 0 (Zero)
+        */
+
+        h2 {
+            color: hsl(255, 84%, 12%, 0.5);
+        }
+
+        .parent {
+            color: aqua;
+        }
+
+        p {
+            color: currentColor;
+            color: inherit;
+        }
+    </style>
+</head>
+
+<body>
+    <h1> CSS - Colors</h1>
+    <h2> CSS - Colors- hsl</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque non adipisci odio iste temporibus quod? Facilis
+        saepe doloremque alias?</p>
+
+    <div class="parent">
+
+        <h3>Inherit Color</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim delectus aspernatur ipsum!</p>
+    </div>
+</body>
+
+</html>
