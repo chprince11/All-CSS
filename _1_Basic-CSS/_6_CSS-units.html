@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-units</title>
+</head>
+<style>
+    /*  *** CSS units ***
+
+    * 2 types of units: * 
+    1) Absolute Units - Pexels ( px ), inches ( in ), points ( pt ) - Fixed unit 
+    2) Relative Units - em, Root em ( rem ), percentage ( % ) - Will change relative to its parent unit container
+
+    -- Percentage  100% = 16 px, so 1px = 6.25%
+
+    -- em: It is a relatiove unit that is calculated based on the font size of the parent element. 
+       1 em = 16 px
+
+    -- ** rem (Root em) ** : Based on the root element ( HTML element).
+
+    16px = 100%;
+    1px  = 6.25%;
+    10px = 62.5%;
+
+    */
+
+    h1 {
+        font-size: 54px; 
+        color: purple;
+    }
+
+    p {
+        font-size: 36px;
+    }
+
+    li {
+        font-size: 44px;
+    }
+</style>
+
+<body>
+
+    <h1>Units in CSS</h1>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, reprehenderit ab. Voluptatem repellatvoluptatibus soluta.</p>
+
+    <div class="parent">
+        <ul>
+            <li>This is Text</li>
+            <li>This is Text2</li>
+            <li>This is Text3</li>
+        </ul>
+
+    </div>
+
+</body>
+
+</html>
