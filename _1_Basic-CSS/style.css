@@ -1,0 +1,41 @@
+/*
+
+CSS ( Cascading Style Sheets )
+
+- It is a stylesheet language used to describe the look & presentation of a document written in HTML or XML. 
+- It defines how elements are displayed on a web page.
+- CSS makes websites visually appealing and user-friendly.
+
+** CSS Syntax ***
+h1  { color: red; font-size: 32px; } 
+// This is just how CSS is written, will explain everything in coming CSS files
+
+*** History ***
+- CSS was created by a group of individuals known as the World Wide Web Consortium ( W3C ).
+- Primary contributors include 'Hakon Wium Lie' and 'Bert Bos'.
+- Maintained by the W3C.
+
+- CSS1   ( 1996 )
+- CSS2   ( 1998 )
+- CSS2.1 ( 2011 ) 
+
+*** CSS Rule Structure ***
+- A CSS rule consists of a selector and a declaration block.
+- Declaration are used to define the style properties for the selected elements.
+- Each declaration consists of a property and a value.
+- ex: selector {
+    property: value; // ⬅️ This is called declaration, combination of property and value.
+}
+
+*** 3 ways to use CSS in HMTL ***
+1) Inline CSS ( Style directly applied to the HTML element using style attribute )
+2) Internal CSS ( We gonna use <style> tag within the HTML document's <head> )
+3) External CSS ( Style stored in seperate .css files linked to the HTML document using the <link> element )
+
+*/
+
+/* ⬇️ This is External CSS, just link this style.css file to the HTML file into the <head> tag */
+h1 {
+    color: aqua; 
+    font-weight: bolder;
+}
