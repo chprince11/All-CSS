@@ -6,9 +6,60 @@
     <title>CSS- Display</title>
     <style>
       /*
-        */
+      display: block;
+      - It makes the element a block-level element. It will take the full width available. They start on a new line. ex: para tag, headings, lists, containers
+      display: inline;
+      - It will only take content width. ex: anchor tag, span.
+      - The width & height will not work with inline block
+      element.
+      - margin and padding top-bottom will also not work, because inline element moves horizontal on the stack. 
+      display: inline-block; 
+      - We can give width and height, padding and width, will not take complete width like inline element.
+      display: none;
+      - Also will not take space
+
+      */
+      p {
+        background: lightblue;
+        padding: 10px;
+      }
+
+      h1 {
+        background: lightcoral;
+        padding: 10px;
+      }
+
+      div {
+        background: lightseagreen;
+        padding: 10px;
+      }
+
+      span {
+        background: lightyellow;
+        padding: 10px;
+        display: none;
+      }
+
+      a {
+        padding: 10px;
+        margin-left: 30px;
+        width: 100px;
+        height: 100px;
+      }
     </style>
   </head>
 
-  <body></body>
+  <body>
+    <h1>This is block element heading tag</h1>
+    <p>This is block element paragraph tag</p>
+
+    <div>This is block element div tag</div>
+    <br />
+    <span>This inline element span tag</span>
+    <a href="">This is inline element</a>
+    <p>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos
+      impedit nemo dolore?
+    </p>
+  </body>
 </html>
