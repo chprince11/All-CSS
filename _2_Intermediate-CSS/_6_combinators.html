@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS -Combinators</title>
+  </head>
+  <style>
+    /*
+    1) Desendant Selector ( space )
+    2) Adjacent Sibling Selector ( + )
+    3) Child Selector ( > ) - select direct child
+    4) General Sibling Selector ( ~ ) - select all elements who are siblings of another element
+    5) Universal Selector ( * ) - selects all elements
+    */
+    .parent {
+      font-size: 25px;
+      font-weight: bold;
+    }
+
+    ul p {
+      color: red;
+    }
+
+    ul li {
+      color: green;
+    }
+
+    ul > li {
+      color: blue;
+    }
+
+    ul p + li {
+      color: pink;
+    }
+
+    ul p ~ li {
+      color: purple;
+    }
+  </style>
+  <body>
+    <div class="parent">
+      <ul>
+        <p>I am First</p>
+        <li>inside</li>
+        <li>
+          inside
+          <ol>
+            <li>nested</li>
+            <ul>
+              <li>deep nested</li>
+            </ul>
+            <li>nested</li>
+          </ol>
+        </li>
+        <li>inside</li>
+        <p>I am Last</p>
+        <li>last child</li>
+      </ul>
+
+      <li>outside</li>
+    </div>
+  </body>
+</html>
