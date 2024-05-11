@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS - positions</title>
+    <style>
+      /*
+        position: relative
+        position: absolute
+        position: static
+        position: fixed
+        position: sticky
+        */
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      .parent {
+        display: flex;
+        flex-direction: column;
+        background: rgb(240, 0, 0);
+        width: 800px;
+        height: 400px;
+        margin-left: 20%;
+        margin-top: 10%;
+        gap: 20px;
+        position: relative;
+      }
+
+      .child {
+        background: green;
+        width: 100px;
+        height: 100px;
+        color: yellow;
+        font-size: 2rem;
+        position: absolute;
+      }
+      .one {
+        top: 0;
+        right: 0;
+      }
+      .two {
+        bottom: 0;
+        right: 0;
+      }
+
+      .three {
+        bottom: 0;
+      }
+
+      .five {
+        left: 350px;
+        bottom: 150px;
+        /*top: 0;
+        position: fixed; */
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="parent">
+      <div class="child one">child 1</div>
+      <div class="child two">child 2</div>
+      <div class="child three">child 3</div>
+      <div class="child four">child 4</div>
+      <div class="child five">child 5</div>
+    </div>
+  </body>
+</html>
