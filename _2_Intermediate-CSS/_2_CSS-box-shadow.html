@@ -1,42 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CSS-Box-Shadow</title>
     <style>
-        *{margin: 0;padding: 0;box-sizing: border-box;}
-        /* Box-Shadow 
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      /* Box-Shadow 
 
         box-shadow: 2px 1px 2px 4px #61677a;
         box-shadow: Offset-X, Offset-Y, Blur-radius, Density/Spread, Color;
         
         */
-        .parent {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin: auto;
-            border: 4px solid red;
-            width: 50%;
-            height: 50vh;
-            box-shadow: -9px 15px 16px 5px rgba(0,0,0,0.35);
-        }
+      .parent {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        border: 4px solid red;
+        width: 50%;
+        height: 50vh;
+        box-shadow: 15px 16px 5px rgba(0, 0, 0, 0.35);
+      }
 
-        img {
-            filter: drop-shadow(10px 10px 10px red);
-            /* Only used this when there is no image background*/
-        }
+      img {
+        filter: drop-shadow(10px 10px 10px red);
+        /* Only used this when there is no image background*/
+      }
     </style>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="parent">
-        <h1>CSS-Box-Shadow</h1>
+      <h1>CSS-Box-Shadow</h1>
     </div>
-    <br>
-    <img src="../_1_Basic-CSS/img/full-stack.png" width="200px" height="200px" alt="laptop image">
-</body>
-
+    <br />
+    <img
+      src="../_1_Basic-CSS/img/full-stack.png"
+      width="200px"
+      height="200px"
+      alt="laptop image"
+    />
+  </body>
 </html>
