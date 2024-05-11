@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS- filters</title>
+  </head>
+  <style>
+    img {
+      width: "400px";
+      height: "300px";
+      filter: grayscale(50%);
+      filter: brightness(100%);
+      filter: blur();
+      filter: saturate(2);
+      filter: contrast(120%);
+      filter: invert(1);
+      filter: opacity(0.8);
+      filter: blur(2px) brightness(80%) contrast(120%);
+    }
+  </style>
+  <body>
+    <!-- filter we use mostly with the image
+       - grayscale() , opacity(), blur(), contrast(), brightness(), invert()
+    -->
+    <img src="../_1_Basic-CSS/img/full-stack.png" />
+  </body>
+</html>
