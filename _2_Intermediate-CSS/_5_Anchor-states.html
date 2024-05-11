@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS - Anchor States</title>
+  </head>
+  <style>
+    /*
+    1) Link ( a: link ) - default
+    2) Hover ( a:hover ) - when user hover the link
+    3) Visited ( a:visited ) - style applied when user visited the link and came back to same page
+    4) Active ( a:active ) - User hold onto the link
+    */
+    a {
+      font-size: 2rem;
+    }
+
+    a:link {
+      color: green;
+    }
+
+    a:visited {
+      color: aqua;
+    }
+
+    a:hover {
+      color: green;
+      font-weight: bold;
+    }
+
+    a:active {
+      color: red;
+    }
+  </style>
+
+  <body>
+    <a href="https://youtube.com">Youtube</a>
+  </body>
+</html>
